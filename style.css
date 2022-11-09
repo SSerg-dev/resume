@@ -44,7 +44,7 @@ body {
     margin-bottom: 10px;
 }
 
-@media(max-width: 350px) {
+@media(max-width: 420px) {
     .info {
         display: block;
         text-align: center;
@@ -163,7 +163,7 @@ table td:nth-child(3) {
     margin-right: 0;
 }
 
-@media(max-width: 350px) {
+@media(max-width: 420px) {
     .form-row {
         display: block;
     }
