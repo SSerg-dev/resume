@@ -1,92 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>resume</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>resume</title>
-</head>
+  <body>
+    <div class="container">
+      <h1>Resume</h1>
+      <hr />
 
-<body>
-  <h1>resume</h1>
-  <hr />
-  <img src="./imgs/sergei.jpg" width="100" alt="Sergei" />
-  <h2>social contact list</h2>
-  <a href="https://www.instagram.com/vladilen.minin/" target="_blank">instagram</a>
-  |
-  <a href="https://t.me/js_by_vladilen" target="_blank">telegram</a>
-  |
-  <a href="https://www.youtube.com/c/VladilenMinin" target="_blank">youtube</a>
-  <hr />
+      <div class="info">
 
-  <h2>my hobby</h2>
+          <img src="./imgs/sergei.jpg" alt="Sergei" class="avatar" />
 
-  <ol>
-    <li>trips</li>
-    <li>guitar</li>
-    <li>programming</li>
-    <li>wife</li>
-  </ol>
-  <hr />
-  <h2>my job</h2>
+        
+        <div class="info-text">
+          <h2>social contact list</h2>
+          <a href="https://www.instagram.com/vladilen.minin/" target="_blank"
+            >instagram</a
+          >
+          |
+          <a href="https://t.me/js_by_vladilen" target="_blank">telegram</a>
+          |
+          <a href="https://www.youtube.com/c/VladilenMinin" target="_blank"
+            >youtube</a
+          >
+        </div>
+      </div>
 
-  <table>
-    <thead>
-      <tr>
-        <th>name</th>
-        <th>job</th>
-        <th>year</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>kolskaya</td>
-        <td>asutp</td>
-        <td>16</td>
-      </tr>
-      <tr>
-        <td>summa</td>
-        <td>asutp</td>
-        <td>1</td>
-      </tr>
-      <tr>
-        <td>alles</td>
-        <td>frontend</td>
-        <td>2</td>
-      </tr>
+      <hr />
 
-    </tbody>
+      <div class="card bg-green">
+        <h2>my hobby</h2>
 
-  </table>
-  <hr>
+        <ol class="list">
+          <li>trips</li>
+          <li>guitar</li>
+          <li>programming</li>
+          <li>wife</li>
+        </ol>
+      </div>
 
-  <h2>call me</h2>
-  
-  <form>
-    <div>
-      <label for="name">name</label>
-      <input type="text" id="name" placeholder="your name">
+      <div class="card bg-red">
+        <h2>my job</h2>
+        <table class="table">
+          <!-- <thead>
+            <tr>
+              <th>name</th>
+              <th>job</th>
+              <th>year</th>
+            </tr>
+          </thead> -->
+
+          <tbody>
+            <tr>
+              <td>kolskaya</td>
+              <td>asutp</td>
+              <td>16</td>
+            </tr>
+            <tr>
+              <td>summa</td>
+              <td>asutp</td>
+              <td>1</td>
+            </tr>
+            <tr>
+              <td>alles</td>
+              <td>frontend</td>
+              <td>2</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="card bg-yellow">
+        <h2>my courses</h2>
+        <ul class="link-list">
+          <li>
+            <a href="#">html course</a>
+          </li>
+          <li>
+            <a href="#">css course</a>
+          </li>
+        </ul>
+      </div>
+
+      <form class="form">
+        <h2>call me</h2>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">name</label>
+            <input type="text" id="name" placeholder="your name" />
+          </div>
+
+          <div class="form-group">
+            <label for="email">email</label>
+            <input type="email" id="email" placeholder="your email" />
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="message">message</label>
+          <textarea
+            id="message"
+            cols="25"
+            rows="4"
+            placeholder="your message..."
+          ></textarea>
+        </div>
+
+        <div>
+          <button type="submit" class="btn">Send message</button>
+        </div>
+      </form>
     </div>
-
-    <div>
-      <label for="email">email</label>
-      <input type="email" id="email" placeholder="your email">
-    </div>
-
-    <div>
-      <label for="message">message</label>
-      <br>
-      <textarea id="message" cols="25" rows="4" placeholder="your message..."></textarea>
-    </div>
-
-    <div>
-      <button type="submit">send message</button>
-    </div>
-
-  </form>
-
-
-</body>
-
+  </body>
 </html>
